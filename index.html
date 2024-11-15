@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="index2.html">Formulario 1</a>
+        <a href="index3.html">Formulario 2</a>
+        <a href="index4.html">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- Contenido  -->
+    <h1>Proyecto PCA</h1>
+    <p id="parrafo1">Aquí encontrarás información sobre nosotros y nuestros servicios.</p>
+
+    <!-- tarjetas -->
+
+    <div id="container">
+      <div class="card">
+        <img src="imagen-pc.jpg" alt="Imagen de Ejemplo" />
+        <h1>Windows XP</h1>
+        <p>
+          Descripción breve de la tarjeta. Aquí puedes incluir información
+          relevante y concisa.
+        </p>
+        <button id="boton1" onclick="cambiarMensaje('boton1', 'Windows XP Fue lanzado al mercado el 25 de octubre de 2001')">Haz clic aquí</button>
+     
+      </div>
+
+      <div class="card">
+        <img src="imagen-pc.jpg" alt="Imagen de Ejemplo" />
+        <h1>Windows 95</h1>
+        <p>
+          Descripción breve de la tarjeta. Aquí puedes incluir información
+          relevante y concisa.
+        </p>
+        <button id="boton2" onclick="cambiarMensaje('boton2', 'Windows 95 fue lanzado al mercado el 24 de agosto de 1995')">Haz clic aquí</button>
+      </div>
+
+      <div class="card" id="card">
+        <img src="imagen-pc.jpg" alt="Imagen de Ejemplo" />
+        <h1>Windows 7</h1>
+        <p>
+          Descripción breve de la tarjeta. Aquí puedes incluir información
+          relevante y concisa.
+        </p>
+        <button id="boton3" onclick="cambiarMensaje('boton3', 'Windows 7 fue la lazado oficialmente el 22 de octubre de 2009')">Haz clic aquí</button>
+      
+      </div>
+    </div>
+
+
+    
+
+    <!-- funciones -->
+    <div class="funtion">
+    <button onclick="cambiarColor()" >Cambiar color</button>
+    <button onclick="cambiarMensaje1()">Cambiar texto</button>
+    <button onclick="mostrarAlerta()" >Mensaje js</button>
+   </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <p>© Angel Meriño 2024 Company, Inc.</p>
+        <p>
+          <a href="#inicio">Inicio</a> |
+          <a href="#sobre-nosotros">Sobre Nosotros</a> |
+          <a href="#servicios">Servicios</a> | <a href="#contacto">Contacto</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

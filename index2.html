@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="index2.html">Formulario 1</a>
+        <a href="index3.html">Formulario 2</a>
+        <a href="index4.html">Contacto</a>
+      </div>
+    </nav>
+
+
+ <!-- Formulario -->
+    
+
+    <form class="form" action="/submit" method="post"> 
+    <h2>Formulario de Registro</h2> 
+    <label for="nombre">Nombre:</label> 
+    <input type="text" id="nombre" name="nombre" required>
+    <br><br> 
+    <label for="apellido">Apellido:</label> 
+    <input type="text" id="apellido" name="apellido" required>
+    <br><br> 
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label> 
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    <br><br> 
+    <label for="sexo">Sexo:</label> 
+    
+    <select id="sexo" name="sexo" required> 
+    <option value="masculino">Masculino</option> 
+    <option value="femenino">Femenino</option> 
+    <option value="otro">Otro</option> 
+    </select>
+
+    <br><br> <label for="pais">País:</label> 
+    <input type="text" id="pais" name="pais" required>
+    <br><br> 
+    <label for="ciudad">Ciudad:</label> 
+    <input type="text" id="ciudad" name="ciudad" required>
+    <br><br> 
+    <div class="funtion">
+    <input type="submit" value="Registrar">
+    </div>
+
+  
+
+   
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <p>© Angel Meriño 2024 Company, Inc.</p>
+        <p>
+          <a href="#inicio">Inicio</a> |
+          <a href="#sobre-nosotros">Sobre Nosotros</a> |
+          <a href="#servicios">Servicios</a> | <a href="#contacto">Contacto</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

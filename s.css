@@ -1,0 +1,18 @@
+.miDiv {
+  
+  border: 2px solid black; /* Añade un borde negro de 2px */
+  padding: 10px; /* Espacio dentro del borde */
+  margin: 20px; /* Espacio fuera del borde */
+}
+
+#mainDiv{
+    display:flex;
+}
+#sidebar{
+    
+    
+}
+
+#main{
+    
+}

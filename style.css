@@ -2,6 +2,7 @@
 .navbar {
   background-color: #333;
   overflow: hidden;
+  border-radius: 10px;
 }
 .navbar a {
   float: left;
@@ -20,7 +21,7 @@
 /* Estilos básicos para la tarjeta */
 
 .card, .form {
-  background-color: #f9f9f9;
+  
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,6 +30,11 @@
   text-align: center;
   width: 300px;
 }
+.card:hover{
+  background-color: #d1d1d1;
+  box-shadow: 0 4px 8px #3d8c48(0, 0, 0, 0.1);
+}
+
 .card img, .en_construccion img {
   border-radius: 8px 8px 0 0;
   width: 70%;
@@ -37,6 +43,7 @@
   font-size: 14px;
   margin: 10px 0;
 }
+
 .card p {
   color: #555;
   font-size: 16px;
@@ -49,6 +56,12 @@
   cursor: pointer;
   padding: 10px 20px;
   text-align: center;
+  
+}
+
+.card button:hover,.funtion button:hover, .funtion input:hover  {
+  background-color: #346f3c;
+  color: black;
 }
 
 #container{
@@ -75,6 +88,7 @@ display:flex;
     left: 0;
     bottom: 0;
     width: 100%;
+    border-radius: 10px;
    
     
   }

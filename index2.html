@@ -27,33 +27,48 @@
     <h2>Formulario de Registro</h2>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required autocomplete="name">
+
     <br><br>
     <label for="apellido">Apellido:</label>
     <input type="text" id="apellido" name="apellido" required >
+
     <br><br>
     <label for="email">Correo:</label>
     <input type="email" id="email" name="email" required autocomplete="email">
+
     <br><br>
     <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
     <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
     <br><br>
     <label for="sexo">Sexo:</label>
-
     <select id="sexo" name="sexo" required>
       <option value="masculino">Masculino</option>
       <option value="femenino">Femenino</option>
       <option value="otro">Otro</option>
     </select>
 
-    <br><br> <label for="pais">País:</label>
-    <input type="text" id="pais" name="pais" required>
+    <br><br> 
+    <label for="pais">País:</label>
+
+    <input list="cursos" />
+    <datalist id="cursos">
+      <option value="Colombia"></option>
+      <option value="Mexico"></option>
+      <option value="Peru"></option>
+      <option value="Venezuela"></option>
+    </datalist>
+    
+
     <br><br>
     <label for="ciudad">Ciudad:</label>
     <input type="text" id="ciudad" name="ciudad" required>
     <br><br>
+
     <div class="funtion">
       <input type="submit" value="Registrar">
     </div>
+
   </form>
 
 

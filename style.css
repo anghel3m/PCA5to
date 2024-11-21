@@ -106,11 +106,10 @@
 
 
 #imagen {
-
-width: 40%;
-position: absolute; 
+width: 20%;
+position:relative; 
 top: 50%; 
-transform: translateY(-50%);
+
     
   
 }

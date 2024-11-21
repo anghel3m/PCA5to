@@ -20,25 +20,25 @@ elemento.style.backgroundColor = "yellow"; }
 
 
 
-let imagen = document.getElementById('imagen'); 
-let contenedor = document.getElementById('contenedor'); 
-let posicion = 0;
+let imagen = document.getElementById('imagen');
+ let contenedor = document.getElementById('contenedor');
+  let mensaje = document.getElementById('mensaje'); let posicion = 0;
+   let intervalo;
 
-function moverImagen() { 
-posicion += 5; if (posicion > contenedor.clientWidth - imagen.clientWidth) 
-{ posicion = 0; 
- } imagen.style.left = posicion + 'px'; 
- }
- setInterval(moverImagen, 50);
+    function moverImagen() { 
+      posicion += 5; 
+
+ if (posicion > contenedor.clientWidth - imagen.clientWidth) 
+ { posicion = 0; 
  
+  } 
+  imagen.style.left = posicion + 'px';
+   } 
+   function detenerAnimacion() {
+    alert('animacion finalizada')
 
-
-function iniciarAnimacion() {
-intervalo = setInterval(moverImagen, 5000);
-setTimeout(detenerAnimacion, 20000); 
-}
-
-function detenerAnimacion() {
-clearInterval(intervalo); 
-mensaje.style.display = 'block'; 
- }
+    
+    clearInterval(intervalo);
+     mensaje.style.display = 'block';
+       } intervalo = setInterval(moverImagen, 50);
+        setTimeout(detenerAnimacion, 10000); 

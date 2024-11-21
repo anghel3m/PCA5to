@@ -16,3 +16,15 @@ function cambiarMensaje(idElemento, nuevoTexto) {
 function cambiarColor() { 
 const elemento = document.getElementById("card"); 
 elemento.style.backgroundColor = "yellow"; }
+
+
+
+
+let imagen = document.getElementById('imagen'); 
+let contenedor = document.getElementById('contenedor'); 
+let posicion = 0;
+
+function moverImagen() { posicion += 5; if (posicion > contenedor.clientWidth - imagen.clientWidth) { posicion = 0; 
+ } imagen.style.left = posicion + 'px'; 
+ }
+ setInterval(moverImagen, 50);

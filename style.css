@@ -17,11 +17,10 @@
   color: black;
 }
 
-
 /* Estilos básicos para la tarjeta */
 
-.card, .form {
-  
+.card,
+.form {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,12 +29,13 @@
   text-align: center;
   width: 300px;
 }
-.card:hover{
+.card:hover {
   background-color: #d1d1d1;
   box-shadow: 0 4px 8px #3d8c48(0, 0, 0, 0.1);
 }
 
-.card img, .en_construccion img {
+.card img,
+.en_construccion img {
   border-radius: 8px 8px 0 0;
   width: 70%;
 }
@@ -48,7 +48,9 @@
   color: #555;
   font-size: 16px;
 }
-.card button,.funtion button, .funtion input {
+.card button,
+.funtion button,
+.funtion input {
   background-color: #333;
   border: none;
   border-radius: 4px;
@@ -56,57 +58,66 @@
   cursor: pointer;
   padding: 10px 20px;
   text-align: center;
-  
 }
 
-.card button:hover,.funtion button:hover, .funtion input:hover  {
+.card button:hover,
+.funtion button:hover,
+.funtion input:hover {
   background-color: #346f3c;
   color: black;
 }
 
-#container{
-display:flex;
+#container {
+  display: flex;
+}
+
+/* Estilos básicos para el footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+.footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer a:hover {
+  color: #ddd;
+}
+
+.en_construccion {
+  text-align: center;
+  width: 60%; /* Ancho del div */
+  height: 80%; /* Altura del div */
+  background-color: #f2f2f2; /* Color de fondo del div */
+  margin: 0 auto; /* Margen automático en los lados izquierdo y derecho para centrar el div */
+
 
 }
 
 
 
 
+#imagen {
 
-
-
-
-
-/* Estilos básicos para el footer */
-.footer {
-  
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-radius: 10px;
-   
+width: 40%;
+position: absolute; 
+top: 50%; 
+transform: translateY(-50%);
     
-  }
-  .footer a {
-    color: #f2f2f2;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  .footer a:hover {
-    color: #ddd;
-  }
+  
+}
 
-  .en_construccion{
-  
-    text-align: center;
-    width: 60%; /* Ancho del div */
-    height: 80%; /* Altura del div */
-    background-color: #f2f2f2; /* Color de fondo del div */
-    margin: 0 auto; /* Margen automático en los lados izquierdo y derecho para centrar el div */
-  
-  }
+#mensaje {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
